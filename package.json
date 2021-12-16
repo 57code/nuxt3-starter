@@ -1,22 +1,27 @@
 {
-  "private": true,
-  "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxi build",
-    "start": "node .output/server/index.mjs",
-    "lint": "eslint",
-    "test": "jest"
-  },
-  "devDependencies": {
-    "@types/jest": "^27.0.3",
-    "@typescript-eslint/eslint-plugin": "^5.7.0",
-    "@typescript-eslint/parser": "^5.7.0",
-    "eslint": "^8.4.1",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "nuxt3": "latest"
-  },
-  "dependencies": {
-    "prettier": "^2.5.1"
-  }
+	"private": true,
+	"scripts": {
+		"dev": "nuxi dev",
+		"build": "nuxi build",
+		"start": "node .output/server/index.mjs",
+		"lint": "eslint --ext .ts,.js,.vue .",
+		"test": "jest"
+	},
+	"devDependencies": {
+		"@types/jest": "^27.0.3",
+		"@typescript-eslint/eslint-plugin": "^5.7.0",
+		"@typescript-eslint/parser": "^5.7.0",
+		"eslint": "^8.4.1",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-import": "^2.25.3",
+		"eslint-plugin-prettier": "^4.0.0",
+		"eslint-plugin-vue": "^8.2.0",
+		"prettier": "^2.5.1",
+		"typescript": "^4.5.4",
+		"vue-eslint-parser": "^8.0.1"
+	},
+	"dependencies": {
+		"nuxt3": "latest"
+	}
 }
